@@ -197,9 +197,9 @@
     $.cssHooks.scale = {
       set: function( elem, value ) {
         // uncomment this bit if you want to properly parse strings
-        // if ( typeof value === 'string' ) {
-        //   value = parseFloat( value );
-        // }
+        if ( typeof value === 'string' ) {
+          value = parseFloat( value );
+        }
         setIsoTransform( elem, 'scale', value );
       },
       get: function( elem, computed ) {

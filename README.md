@@ -1,4 +1,6 @@
 # Knight BS
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/knight-bs.svg)](https://greenkeeper.io/)
 A Bootstrap 4 theme with a node backend
  *******************************
 [ ![Codeship Status for sethbergman/knight-bs](https://codeship.com/projects/316e6c60-1a23-0134-4fad-3217b0339886/status?branch=master)](https://codeship.com/projects/159260)

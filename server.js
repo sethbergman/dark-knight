@@ -3,7 +3,6 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const app = express()
 
-// const $ = require('jquery')
 // const nodemailer = require('nodemailer')
 // const validator = require('express-validator')
 

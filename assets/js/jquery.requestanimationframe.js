@@ -8,46 +8,42 @@
  * Licensed under the MIT license.
  */
  // UMD factory https://github.com/umdjs/umd/blob/master/jqueryPlugin.js
-( function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
-		define( [ "jquery" ], factory );
-	} else {
-
+    define([ 'jquery' ], factory)
+  } else {
 		// Browser globals
-		factory( jQuery );
-	}
-} )( function( jQuery ) {
+    factory(jQuery)
+  }
+})(function (jQuery) {
+  if (Number(jQuery.fn.jquery.split('.')[ 0 ]) >= 3) {
+    if (window.console && window.console.warn) {
+      window.console.warn('The jquery.requestanimationframe plugin is not needed ' +
+			'in jQuery 3.0 or newer as they handle it natively.')
+    }
+    return
+  }
 
-if ( Number( jQuery.fn.jquery.split( "." )[ 0 ] ) >= 3 ) {
-	if ( window.console && window.console.warn ) {
-		window.console.warn( "The jquery.requestanimationframe plugin is not needed " +
-			"in jQuery 3.0 or newer as they handle it natively." );
-	}
-	return;
-}
+  var animating
 
-var animating;
+  function raf () {
+    if (animating) {
+      window.requestAnimationFrame(raf)
+      jQuery.fx.tick()
+    }
+  }
 
-function raf() {
-	if ( animating ) {
-		window.requestAnimationFrame( raf );
-		jQuery.fx.tick();
-	}
-}
+  if (window.requestAnimationFrame) {
+    jQuery.fx.timer = function (timer) {
+      if (timer() && jQuery.timers.push(timer) && !animating) {
+        animating = true
+        raf()
+      }
+    }
 
-if ( window.requestAnimationFrame ) {
-	jQuery.fx.timer = function( timer ) {
-		if ( timer() && jQuery.timers.push( timer ) && !animating ) {
-			animating = true;
-			raf();
-		}
-	};
-
-	jQuery.fx.stop = function() {
-		animating = false;
-	};
-}
-
-} );
+    jQuery.fx.stop = function () {
+      animating = false
+    }
+  }
+})

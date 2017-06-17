@@ -4,7 +4,7 @@ A Bootstrap theme with a node express backend
 
 --------------------------------------------------------------------------------
 
-[![NPM version][npm-image]][npm-url] [![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/knight-bs.svg)](https://greenkeeper.io/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/sethbergman/knight-bs)
+[![NPM version][npm-image]][npm-url] [![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/knight-bs.svg)](https://greenkeeper.io/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.org/sethbergman/knight-bs.svg?branch=master)](https://travis-ci.org/sethbergman/knight-bs)
 
 
 ## Demo:

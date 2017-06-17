@@ -37,7 +37,7 @@ npm start
 
 ## License
 
-MIT © 2017 [Seth Bergman](sethbergman.com)
+MIT © 2017 [Seth Bergman](http://sethbergman.com)
 
 [npm-image]: https://badge.fury.io/js/knight-bs.svg
 [npm-url]: https://npmjs.org/package/knight-bs

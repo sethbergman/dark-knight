@@ -1,21 +1,14 @@
 {
 	"name": "knight-bs",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A Bootstrap theme with a node express backend",
 	"main": "server.js",
 	"scripts": {
 		"test": "ava tests/test.js",
 		"start": "node server.js"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/sethbergman/knight-bs.git"
-	},
-	"author": {
-		"name": "Seth Bergman",
-		"email": "hello@sethbergman.com",
-		"url": "http://sethbergman.com"
-	},
+	"repository": "git+https://github.com/sethbergman/knight-bs.git",
+	"author": "Seth Bergman <hello@sethbergman.com> (http://sethbergman.com)",
 	"engines": {
 		"node": "8.0.0",
 		"npm": "5.0.3"

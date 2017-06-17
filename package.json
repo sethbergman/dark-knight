@@ -1,31 +1,42 @@
 {
-  "name": "knight-bs",
-  "version": "1.0.1",
-  "description": "Bootstrap website",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sethbergman/knight-bs.git"
-  },
-  "author": "Seth Bergman",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sethbergman/knight-bs/issues"
-  },
-  "homepage": "https://github.com/sethbergman/knight-bs#readme",
-  "dependencies": {
-    "body-parser": "^1.15.1",
-    "consolidate": "^0.14.5",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "express-validator": "^3.2.0",
-    "nodemailer": "4.0.1",
-    "parsleyjs": "^2.3.11",
-    "path": "^0.12.7",
-    "serve-favicon": "^2.3.0"
-  }
+	"name": "knight-bs",
+	"version": "1.0.2",
+	"description": "A Bootstrap theme with a node express backend",
+	"main": "server.js",
+	"scripts": {
+		"test": "ava tests/test.js",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sethbergman/knight-bs.git"
+	},
+	"author": {
+		"name": "Seth Bergman",
+		"email": "hello@sethbergman.com",
+		"url": "http://sethbergman.com"
+	},
+	"engines": {
+		"node": "8.0.0",
+		"npm": "5.0.3"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/sethbergman/knight-bs/issues"
+	},
+	"homepage": "https://github.com/sethbergman/knight-bs#readme",
+	"dependencies": {
+		"body-parser": "^1.15.1",
+		"consolidate": "^0.14.5",
+		"ejs": "^2.4.1",
+		"express": "^4.13.4",
+		"express-validator": "^3.2.0",
+		"nodemailer": "4.0.1",
+		"parsleyjs": "^2.3.11",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {
+		"ava": "^0.19.1",
+		"standard": "^10.0.2"
+	}
 }

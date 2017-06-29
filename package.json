@@ -1,5 +1,5 @@
 {
-	"name": "knight-bs",
+	"name": "dark-knight",
 	"version": "1.0.3",
 	"description": "A Bootstrap theme with a node express backend",
 	"main": "server.js",
@@ -7,7 +7,7 @@
 		"test": "ava tests/test.js",
 		"start": "node server.js"
 	},
-	"repository": "git+https://github.com/sethbergman/knight-bs.git",
+	"repository": "git+https://github.com/sethbergman/dark-knight.git",
 	"author": "Seth Bergman <hello@sethbergman.com> (http://sethbergman.com)",
 	"engines": {
 		"node": "8.0.0",
@@ -15,9 +15,9 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/sethbergman/knight-bs/issues"
+		"url": "https://github.com/sethbergman/dark-knight/issues"
 	},
-	"homepage": "http://knight-bs.npmstack.com",
+	"homepage": "http://dark-knight.npmstack.com",
 	"dependencies": {
 		"body-parser": "^1.15.1",
 		"consolidate": "^0.14.5",

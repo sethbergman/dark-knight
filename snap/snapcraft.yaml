@@ -11,4 +11,8 @@ apps:
   server:
     command: bin/www
     daemon: simple
-    plugs: [network-bind][caddy-hduran,nextcloud]
+    plugs: [nodejs,network-interface]
+parts:
+  dark-knight:
+    source: ..
+    plugin: dump

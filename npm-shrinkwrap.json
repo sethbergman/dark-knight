@@ -1,6 +1,6 @@
 {
-	"name": "knight-bs",
-	"version": "1.0.2",
+	"name": "dark-knight",
+	"version": "1.0.3",
 	"lockfileVersion": 1,
 	"dependencies": {
 		"@ava/babel-plugin-throws-helper": {

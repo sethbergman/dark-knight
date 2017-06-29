@@ -9,6 +9,6 @@ confinement: strict
 
 apps:
   server:
-    command: node server.js
+    command: bin/www
     daemon: simple
     plugs: [network-bind][caddy-hduran,nextcloud]

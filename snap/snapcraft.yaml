@@ -1,0 +1,14 @@
+name: dark-knight
+version: "1.0"
+summary: A Bootstrap theme with a node express backend
+description: |
+  This is a badass theme!
+
+grade: stable
+confinement: strict
+
+apps:
+  server:
+    command: node server.js
+    daemon: simple
+    plugs: [network-bind][caddy-hduran,nextcloud]

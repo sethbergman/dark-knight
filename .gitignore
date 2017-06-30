@@ -3,3 +3,4 @@ node_modules
 *.snap
 *.assert
 *.tar.bz2
+snap/dark-knight_1.0_source.tar.bz2

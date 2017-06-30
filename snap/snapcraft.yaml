@@ -7,11 +7,11 @@ grade: stable
 architectures: [amd64]
 confinement: strict
 
-# apps:
-#   dark-knight:
-#     command: dark-knight
-#     daemon: simple
-#     plugs: [network-bind]
+apps:
+  dark-knight:
+    command: dark-knight
+    daemon: simple
+    plugs: [network-bind]
 parts:
   nodejs-part:
     source: .

@@ -1,0 +1,9 @@
+dependencies:
+  pre:
+    - gem install package_cloud
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - package_cloud push sethbergman/dark-knight/os/version /path/to/pkg.ext

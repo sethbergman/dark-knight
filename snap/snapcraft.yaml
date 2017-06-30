@@ -3,16 +3,33 @@ version: "1.0"
 summary: A Bootstrap theme with a node express backend
 description: |
   This is a badass theme!
-
 grade: stable
+architectures: [amd64]
 confinement: strict
 
-apps:
-  server:
-    command: bin/www
-    daemon: simple
-    plugs: [nodejs,network-interface]
+# apps:
+#   dark-knight:
+#     command: dark-knight
+#     daemon: simple
+#     plugs: [network-bind]
 parts:
-  dark-knight:
-    source: ..
-    plugin: dump
+  nodejs-part:
+    source: .
+    plugin: nodejs
+    npm-run:
+        - test
+# parts:
+#   dark-knight:
+#     source: .
+#     plugin: nodejs
+#     node-package-manager: npm
+#     after: [desktop-ubuntu-app-platform, webapp-helper]
+# plugs:
+#   browser-sandbox:
+#     interface: browser-support
+#     allow-sandbox: true
+#
+# command: webapp-launcher --enable-back-forward --webappUrlPatterns=https?://dark-knight.npmstack.com/* http://dark-knight.npmstack.com/
+#     plugs:
+#       - browser-sandbox
+#       - network

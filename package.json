@@ -1,8 +1,11 @@
 {
 	"name": "dark-knight",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A Bootstrap theme with a node express backend",
 	"main": "server.js",
+	"bin": {
+		"dark-knight": "server.js"
+	},
 	"scripts": {
 		"test": "ava tests/test.js",
 		"start": "node server.js"

@@ -1,38 +1,38 @@
 {
-	"name": "dark-knight",
-	"version": "1.0.4",
-	"description": "A Bootstrap theme with a node express backend",
-	"main": "server.js",
-	"bin": {
-		"dark-knight": "server.js"
-	},
-	"scripts": {
-		"test": "ava tests/test.js",
-		"start": "node server.js"
-	},
-	"repository": "git+https://github.com/sethbergman/dark-knight.git",
-	"author": "Seth Bergman <hello@sethbergman.com> (http://sethbergman.com)",
-	"engines": {
-		"node": "8.0.0",
-		"npm": "5.0.3"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/sethbergman/dark-knight/issues"
-	},
-	"homepage": "http://dark-knight.npmstack.com",
-	"dependencies": {
-		"body-parser": "^1.15.1",
-		"consolidate": "^0.14.5",
-		"ejs": "^2.4.1",
-		"express": "^4.13.4",
-		"express-validator": "^3.2.0",
-		"nodemailer": "^4.0.1",
-		"parsleyjs": "^2.3.11",
-		"path": "^0.12.7"
-	},
-	"devDependencies": {
-		"ava": "^0.19.1",
-		"standard": "^10.0.2"
-	}
+  "name": "dark-knight",
+  "version": "1.0.4",
+  "description": "A Bootstrap theme with a node express backend",
+  "main": "server.js",
+  "bin": {
+    "dark-knight": "server.js"
+  },
+  "scripts": {
+    "test": "ava tests/test.js",
+    "start": "node server.js"
+  },
+  "repository": "git+https://github.com/sethbergman/dark-knight.git",
+  "author": "Seth Bergman <hello@sethbergman.com> (http://sethbergman.com)",
+  "engines": {
+    "node": "8.0.0",
+    "npm": "5.0.3"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sethbergman/dark-knight/issues"
+  },
+  "homepage": "http://dark-knight.npmstack.com",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "consolidate": "^0.14.5",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-validator": "^5.0.0",
+    "nodemailer": "^4.0.1",
+    "parsleyjs": "^2.3.11",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "standard": "^10.0.2"
+  }
 }
